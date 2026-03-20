@@ -1,2 +1,25 @@
-# cinereserve-api
-A high-performance RESTful API for real-time cinema seat reservations and ticket management.
+# CineReserve
+
+API REST para reserva de assentos em cinemas.
+
+## Requisitos
+
+- Python 3.12+
+- Poetry
+
+## Instalação
+```bash
+poetry install
+cp .env.example .env
+# Edite o .env com sua SECRET_KEY
+```
+
+## Gerando uma SECRET_KEY
+```bash
+python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
+```
+
+## Rodando
+```bash
+poetry run python manage.py runserver
+```

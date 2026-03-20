@@ -1,0 +1,15 @@
+# Ambiente virtual
+/.venv/
+
+# Editor
+/.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Django
+*.sqlite3
+
+# Variáveis de ambiente
+.env
