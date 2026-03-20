@@ -4,7 +4,7 @@ API REST para reserva de assentos em cinemas.
 
 ## Requisitos
 
-- Python 3.12+
+- Python 3.13
 - Poetry
 
 ## Instalação
