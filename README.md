@@ -6,6 +6,7 @@ API REST para reserva de assentos em cinemas.
 
 - Python 3.13
 - Poetry
+- Docker e Docker Compose
 
 ## Instalação
 ```bash
@@ -21,5 +22,6 @@ python -c "from django.core.management.utils import get_random_secret_key; print
 
 ## Rodando
 ```bash
-poetry run python manage.py runserver
+docker compose up
+docker compose exec app python manage.py migrate
 ```
