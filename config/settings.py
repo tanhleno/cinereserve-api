@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "rest_framework_simplejwt",
+    "apps.accounts",
+    "apps.catalog",
+    "apps.reservations"
 ]
 
 REST_FRAMEWORK = {
@@ -105,7 +108,7 @@ CACHES = {
         "LOCATION": config("REDIS_URL"),
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
-        }
+        },
     }
 }
 
