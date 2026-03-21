@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",
     "apps.accounts",
     "apps.catalog",
-    "apps.reservations"
+    "apps.reservations",
 ]
 
 REST_FRAMEWORK = {
@@ -105,7 +105,10 @@ DATABASES = {
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": config("REDIS_URL"),
+        "LOCATION": (
+            f"redis://{config('REDIS_HOST')}:"
+            f"{config('REDIS_PORT')}/{config('REDIS_DB_INDEX')}"
+        ),
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         },

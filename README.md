@@ -16,9 +16,10 @@ cp .env.example .env
 # Edite o .env com sua SECRET_KEY
 ```
 
-As variáveis `DB_HOST`, `DB_PORT` e `REDIS_URL` são configuradas pelo Docker Compose.
-Descomente-as no `.env` apenas se precisar rodar comandos de gerenciamento fora do container
- — podem ficar vazias, basta estarem declaradas para o Django inicializar.
+As variáveis de conexão (`DB_HOST`, `DB_PORT`, `REDIS_HOST`,
+`REDIS_PORT`, `REDIS_DB_INDEX`) são usadas para rodar testes
+e comandos de gerenciamento fora do Docker. Altere-as no `.env`
+se precisar sobrescrever os valores padrão.
 
 ## Gerando uma SECRET_KEY
 
