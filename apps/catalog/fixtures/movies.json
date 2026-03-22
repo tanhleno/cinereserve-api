@@ -1,0 +1,497 @@
+[
+    {
+        "model": "catalog.movie",
+        "pk": 1,
+        "fields": {
+            "title": "Inception",
+            "description": "A thief who steals corporate secrets through dream-sharing technology.",
+            "duration_minutes": 148,
+            "genre": "Sci-Fi",
+            "banner_url": "https://example.com/inception.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 2,
+        "fields": {
+            "title": "The Dark Knight",
+            "description": "Batman faces the Joker, a criminal mastermind who wants to plunge Gotham into anarchy.",
+            "duration_minutes": 152,
+            "genre": "Action",
+            "banner_url": "https://example.com/dark-knight.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 3,
+        "fields": {
+            "title": "Interstellar",
+            "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+            "duration_minutes": 169,
+            "genre": "Sci-Fi",
+            "banner_url": "https://example.com/interstellar.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 4,
+        "fields": {
+            "title": "The Matrix",
+            "description": "A computer hacker learns from mysterious rebels about the true nature of his reality.",
+            "duration_minutes": 136,
+            "genre": "Sci-Fi",
+            "banner_url": "https://example.com/matrix.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 5,
+        "fields": {
+            "title": "Pulp Fiction",
+            "description": "The lives of two mob hitmen, a boxer, and a gangster's wife intertwine in stories of violence and redemption.",
+            "duration_minutes": 154,
+            "genre": "Crime",
+            "banner_url": "https://example.com/pulp-fiction.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 6,
+        "fields": {
+            "title": "The Shawshank Redemption",
+            "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+            "duration_minutes": 142,
+            "genre": "Drama",
+            "banner_url": "https://example.com/shawshank.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 7,
+        "fields": {
+            "title": "Parasite",
+            "description": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+            "duration_minutes": 132,
+            "genre": "Thriller",
+            "banner_url": "https://example.com/parasite.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 8,
+        "fields": {
+            "title": "The Godfather",
+            "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+            "duration_minutes": 175,
+            "genre": "Crime",
+            "banner_url": "https://example.com/godfather.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 9,
+        "fields": {
+            "title": "Spirited Away",
+            "description": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits.",
+            "duration_minutes": 125,
+            "genre": "Animation",
+            "banner_url": "https://example.com/spirited-away.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 10,
+        "fields": {
+            "title": "Gladiator",
+            "description": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+            "duration_minutes": 155,
+            "genre": "Action",
+            "banner_url": "https://example.com/gladiator.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 11,
+        "fields": {
+            "title": "Blade Runner 2049",
+            "description": "A young Blade Runner's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard.",
+            "duration_minutes": 164,
+            "genre": "Sci-Fi",
+            "banner_url": "https://example.com/br2049.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 12,
+        "fields": {
+            "title": "The Grand Budapest Hotel",
+            "description": "A writer encounters the owner of a high-class hotel, who tells him of his early years as a lobby boy.",
+            "duration_minutes": 99,
+            "genre": "Comedy",
+            "banner_url": "https://example.com/budapest.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 13,
+        "fields": {
+            "title": "Whiplash",
+            "description": "A promising young drummer enrolls at a cut-throat music conservatory where his dreams of greatness are mentored by an instructor who will stop at nothing.",
+            "duration_minutes": 106,
+            "genre": "Drama",
+            "banner_url": "https://example.com/whiplash.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 14,
+        "fields": {
+            "title": "Mad Max: Fury Road",
+            "description": "In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search for her homeland with the aid of a group of female prisoners.",
+            "duration_minutes": 120,
+            "genre": "Action",
+            "banner_url": "https://example.com/mad-max.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 15,
+        "fields": {
+            "title": "Arrival",
+            "description": "A linguist works with the military to communicate with alien lifeforms after twelve mysterious spacecraft appear around the world.",
+            "duration_minutes": 116,
+            "genre": "Sci-Fi",
+            "banner_url": "https://example.com/arrival.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 16,
+        "fields": {
+            "title": "John Wick",
+            "description": "An ex-hitman comes out of retirement to track down the gangsters that killed his dog and took everything from him.",
+            "duration_minutes": 101,
+            "genre": "Action",
+            "banner_url": "https://example.com/john-wick.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 17,
+        "fields": {
+            "title": "The Silence of the Lambs",
+            "description": "A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer.",
+            "duration_minutes": 118,
+            "genre": "Thriller",
+            "banner_url": "https://example.com/silence-lambs.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 18,
+        "fields": {
+            "title": "Coco",
+            "description": "Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather.",
+            "duration_minutes": 105,
+            "genre": "Animation",
+            "banner_url": "https://example.com/coco.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 19,
+        "fields": {
+            "title": "The Prestige",
+            "description": "After a tragic accident, two stage magicians in 1890s London engage in a battle to create the ultimate illusion.",
+            "duration_minutes": 130,
+            "genre": "Mystery",
+            "banner_url": "https://example.com/prestige.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 20,
+        "fields": {
+            "title": "Alien",
+            "description": "The crew of a commercial spacecraft encounter a deadly lifeform after investigating an unknown transmission.",
+            "duration_minutes": 117,
+            "genre": "Horror",
+            "banner_url": "https://example.com/alien.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 21,
+        "fields": {
+            "title": "The Departed",
+            "description": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
+            "duration_minutes": 151,
+            "genre": "Crime",
+            "banner_url": "https://example.com/departed.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 22,
+        "fields": {
+            "title": "Django Unchained",
+            "description": "With the help of a German bounty-hunter, a freed slave sets out to rescue his wife from a brutal plantation owner in Mississippi.",
+            "duration_minutes": 165,
+            "genre": "Western",
+            "banner_url": "https://example.com/django.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 23,
+        "fields": {
+            "title": "The Shining",
+            "description": "A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence.",
+            "duration_minutes": 146,
+            "genre": "Horror",
+            "banner_url": "https://example.com/shining.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 24,
+        "fields": {
+            "title": "Memento",
+            "description": "A man with short-term memory loss attempts to track down his wife's murderer.",
+            "duration_minutes": 113,
+            "genre": "Mystery",
+            "banner_url": "https://example.com/memento.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 25,
+        "fields": {
+            "title": "Wall-E",
+            "description": "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.",
+            "duration_minutes": 98,
+            "genre": "Animation",
+            "banner_url": "https://example.com/walle.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 26,
+        "fields": {
+            "title": "Joker",
+            "description": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society.",
+            "duration_minutes": 122,
+            "genre": "Drama",
+            "banner_url": "https://example.com/joker.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 27,
+        "fields": {
+            "title": "No Country for Old Men",
+            "description": "Violence and mayhem ensue after a hunter stumbles upon a drug deal gone wrong and more than two million dollars in cash.",
+            "duration_minutes": 122,
+            "genre": "Thriller",
+            "banner_url": "https://example.com/no-country.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 28,
+        "fields": {
+            "title": "The Truman Show",
+            "description": "An insurance salesman discovers his whole life is actually a reality TV show.",
+            "duration_minutes": 103,
+            "genre": "Comedy",
+            "banner_url": "https://example.com/truman.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 29,
+        "fields": {
+            "title": "Schindler's List",
+            "description": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce.",
+            "duration_minutes": 195,
+            "genre": "History",
+            "banner_url": "https://example.com/schindlers-list.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 30,
+        "fields": {
+            "title": "Léon: The Professional",
+            "description": "12-year-old Mathilda is reluctantly taken in by Léon, a professional assassin, after her family is murdered.",
+            "duration_minutes": 110,
+            "genre": "Action",
+            "banner_url": "https://example.com/leon.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 31,
+        "fields": {
+            "title": "The Wolf of Wall Street",
+            "description": "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime and corruption.",
+            "duration_minutes": 180,
+            "genre": "Biography",
+            "banner_url": "https://example.com/wolf-wall-street.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 32,
+        "fields": {
+            "title": "Goodfellas",
+            "description": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners.",
+            "duration_minutes": 145,
+            "genre": "Crime",
+            "banner_url": "https://example.com/goodfellas.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 33,
+        "fields": {
+            "title": "Seven",
+            "description": "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.",
+            "duration_minutes": 127,
+            "genre": "Mystery",
+            "banner_url": "https://example.com/seven.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 34,
+        "fields": {
+            "title": "Arrival at Midnight",
+            "description": "A fictional noir mystery where a train arrives at a station with no passengers, but a single locked suitcase.",
+            "duration_minutes": 92,
+            "genre": "Noir",
+            "banner_url": "https://example.com/midnight.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 35,
+        "fields": {
+            "title": "The Martian",
+            "description": "An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth.",
+            "duration_minutes": 144,
+            "genre": "Sci-Fi",
+            "banner_url": "https://example.com/martian.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 36,
+        "fields": {
+            "title": "Inglourious Basterds",
+            "description": "In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans.",
+            "duration_minutes": 153,
+            "genre": "War",
+            "banner_url": "https://example.com/basterds.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 37,
+        "fields": {
+            "title": "12 Angry Men",
+            "description": "The jury in a New York City murder trial is frustrated by a single member whose skeptical caution forces them to more carefully consider the evidence.",
+            "duration_minutes": 96,
+            "genre": "Drama",
+            "banner_url": "https://example.com/12-angry-men.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 38,
+        "fields": {
+            "title": "Your Name",
+            "description": "Two strangers find themselves linked in a bizarre way. When a connection forms, will distance be the only thing to keep them apart?",
+            "duration_minutes": 106,
+            "genre": "Animation",
+            "banner_url": "https://example.com/your-name.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 39,
+        "fields": {
+            "title": "The Big Lebowski",
+            "description": "Jeff 'The Dude' Lebowski, mistaken for a millionaire of the same name, seeks restitution for his ruined rug.",
+            "duration_minutes": 117,
+            "genre": "Comedy",
+            "banner_url": "https://example.com/lebowski.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 40,
+        "fields": {
+            "title": "Blade Runner",
+            "description": "A blade runner must pursue and terminate four replicants who stole a ship in space and have returned to Earth to find their creator.",
+            "duration_minutes": 117,
+            "genre": "Sci-Fi",
+            "banner_url": "https://example.com/blade-runner.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 41,
+        "fields": {
+            "title": "City of God",
+            "description": "In the slums of Rio, two kids' paths diverge as one struggles to become a photographer and the other a kingpin.",
+            "duration_minutes": 130,
+            "genre": "Crime",
+            "banner_url": "https://example.com/city-of-god.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 42,
+        "fields": {
+            "title": "Oldboy",
+            "description": "After being kidnapped and imprisoned for fifteen years, Oh Dae-su is released, only to find that he must find his captor in five days.",
+            "duration_minutes": 120,
+            "genre": "Action",
+            "banner_url": "https://example.com/oldboy.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 43,
+        "fields": {
+            "title": "Eternal Sunshine of the Spotless Mind",
+            "description": "When their relationship turns sour, a couple undergoes a medical procedure to have each other erased from their memories.",
+            "duration_minutes": 108,
+            "genre": "Romance",
+            "banner_url": "https://example.com/eternal-sunshine.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 44,
+        "fields": {
+            "title": "Requiem for a Dream",
+            "description": "The drug-induced utopias of four Coney Island people are shattered when their addictions run deep.",
+            "duration_minutes": 102,
+            "genre": "Drama",
+            "banner_url": "https://example.com/requiem.jpg"
+        }
+    },
+    {
+        "model": "catalog.movie",
+        "pk": 45,
+        "fields": {
+            "title": "The Truman Show",
+            "description": "An insurance salesman discovers his whole life is actually a reality TV show vicariously lived by the world.",
+            "duration_minutes": 103,
+            "genre": "Comedy",
+            "banner_url": "https://example.com/truman-show.jpg"
+        }
+    }
+]
