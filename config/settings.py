@@ -62,6 +62,8 @@ SIMPLE_JWT = {
 
 AUTH_USER_MODEL = "accounts.User"
 
+SEATS_PER_ROW = 10
+
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",

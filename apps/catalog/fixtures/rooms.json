@@ -1,0 +1,26 @@
+[
+    {
+        "model": "catalog.room",
+        "pk": 1,
+        "fields": {
+            "name": "Sala 1",
+            "total_seats": 50
+        }
+    },
+    {
+        "model": "catalog.room",
+        "pk": 2,
+        "fields": {
+            "name": "Sala 2",
+            "total_seats": 80
+        }
+    },
+    {
+        "model": "catalog.room",
+        "pk": 3,
+        "fields": {
+            "name": "Sala VIP",
+            "total_seats": 30
+        }
+    }
+]
