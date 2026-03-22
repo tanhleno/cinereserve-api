@@ -33,3 +33,11 @@ python -c "from django.core.management.utils import get_random_secret_key; print
 docker compose up
 docker compose exec app python manage.py migrate
 ```
+
+## Testes
+
+```bash
+docker compose up -d
+poetry install --with dev
+poetry run pytest
+```
