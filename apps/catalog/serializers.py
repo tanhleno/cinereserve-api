@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Movie
+from .models import Movie, Session
 
 
 class MovieSerializer(serializers.ModelSerializer):
@@ -13,3 +13,9 @@ class MovieSerializer(serializers.ModelSerializer):
             "genre",
             "banner_url",
         ]
+
+
+class SessionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Session
+        fields = ["id", "movie", "room", "starts_at"]
