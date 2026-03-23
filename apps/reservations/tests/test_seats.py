@@ -1,8 +1,10 @@
 import pytest
 from django.urls import reverse
 from django.utils import timezone
+from django.contrib.auth import get_user_model
 from datetime import timedelta
 from apps.catalog.models import Movie, Room, Session, Seat
+from apps.reservations.redis import CartRedis
 
 
 @pytest.fixture
@@ -60,12 +62,16 @@ class TestSessionSeatView:
         assert all(s == "available" for s in statuses)
 
     def should_return_reserved_when_lock_and_cart_exist(self, client, session):
-        seat = Seat.objects.filter(room=session.room).first()
-        from django.core.cache import cache
 
-        cart_id = "test-cart-uuid"
-        cache.set(f"seat:{session.id}:{seat.id}", cart_id)
-        cache.set(f"cart:{cart_id}", {"seat_ids": [seat.id]})
+        User = get_user_model()
+        user = User.objects.create_user(
+            username="testuser", email="test@test.com", password="x"
+        )
+        seat = Seat.objects.filter(room=session.room).first()
+
+        cart = CartRedis(user.id, session.id)
+        cart.create([seat.id], ttl=300)
+
         response = client.get(
             reverse("session-seats", kwargs={"session_id": session.pk})
         )
@@ -75,10 +81,17 @@ class TestSessionSeatView:
     def should_return_available_when_lock_exists_but_cart_is_orphan(
         self, client, session
     ):
-        seat = Seat.objects.filter(room=session.room).first()
-        from django.core.cache import cache
 
-        cache.set(f"seat:{session.id}:{seat.id}", "orphan-cart-uuid")
+        User = get_user_model()
+        user = User.objects.create_user(
+            username="testuser", email="test@test.com", password="x"
+        )
+        seat = Seat.objects.filter(room=session.room).first()
+
+        cart = CartRedis(user.id, session.id)
+        cart.create([seat.id], ttl=300)
+        cart.delete()
+
         response = client.get(
             reverse("session-seats", kwargs={"session_id": session.pk})
         )

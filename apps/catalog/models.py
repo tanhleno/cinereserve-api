@@ -1,7 +1,7 @@
 from django.db import models
 from django.core.exceptions import ValidationError
 from datetime import timedelta
-from django.conf import settings
+from .config import PRE_SESSION_MINUTES, POST_SESSION_MINUTES
 
 
 class Movie(models.Model):
@@ -39,8 +39,8 @@ class Session(models.Model):
     starts_at = models.DateTimeField()
 
     def clean(self):
-        pre = timedelta(minutes=settings.PRE_SESSION_MINUTES)
-        post = timedelta(minutes=settings.POST_SESSION_MINUTES)
+        pre = timedelta(minutes=PRE_SESSION_MINUTES)
+        post = timedelta(minutes=POST_SESSION_MINUTES)
         duration = timedelta(minutes=self.movie.duration_minutes)
 
         new_start = self.starts_at - pre
