@@ -52,7 +52,7 @@ POST   /api/v1/auth/refresh/
 > Obs. 1: `POST /api/v1/auth/register/` espera um corpo JSON com `username`, `email`
 > e `password`, ex: `{"username": "joao", "email": "joao@email.com", "password": "senha123"}`.
 
-> Obs. 2: `POST /api/v1/auth/login/` espera `{"username": "joao", "password": "senha123"}`
+> Obs. 2: `POST /api/v1/auth/login/` espera `{"email": "joao@email.com", "password": "senha123"}`
 > e retorna `access` e `refresh` tokens.
 
 > Obs. 3: `POST /api/v1/auth/refresh/` espera `{"refresh": "<refresh_token>"}` e retorna
