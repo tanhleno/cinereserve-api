@@ -10,6 +10,18 @@ User = get_user_model()
 
 class TestCartRedis:
 
+    def should_not_release_active_locks(self, user, session, seat_ids):
+        cart = CartRedis(user.id, session.id)
+        cart.create(seat_ids, ttl=300)
+
+        cart.release_orphan_locks(seat_ids)
+
+        client = cache.client.get_client()
+        for seat_id in seat_ids:
+            assert (
+                client.get(CartRedis.get_seat_lock_key(session.id, seat_id)) is not None
+            )
+
     @pytest.mark.slow
     def should_expire_cart_key_after_ttl(self, user, session, seat_ids):
         cart = CartRedis(user.id, session.id)
