@@ -60,4 +60,4 @@ class Session(models.Model):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return f"{self.movie} - {self.room} - {self.starts_at}"
+        return f"{self.id} - {self.movie} - {self.room} - {self.starts_at}"

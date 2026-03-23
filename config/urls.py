@@ -1,8 +1,9 @@
 from django.urls import path, include
+from django.contrib import admin
 
 urlpatterns = [
-    path("auth/", include("apps.accounts.urls")),
-    path("", include("apps.catalog.urls")),
-    path("", include("apps.reservations.catalog_urls")),
-    path("reservations/", include("apps.reservations.urls")),
+    path("admin/", admin.site.urls),
+    path("api/v1/auth/", include("apps.accounts.urls")),
+    path("api/v1/", include("apps.catalog.urls")),
+    path("api/v1/", include("apps.reservations.catalog_urls")),
 ]
